@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ken — Freelance Website Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --accent:#06b6d4; /* teal */
+      --muted:#98a0b3;
+      --glass: rgba(255,255,255,0.04);
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,var(--bg),#071122 120%); color:#e6eef6; -webkit-font-smoothing:antialiased;
+      padding:32px; display:flex; align-items:center; justify-content:center; min-height:100vh;
+    }
+    .card{
+      width:100%; max-width:920px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px; padding:28px; box-shadow: 0 10px 30px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.03);
+      display:grid; grid-template-columns: 260px 1fr; gap:24px; align-items:center;
+    }
+    .avatar{
+      width:220px; height:220px; border-radius:14px; background:linear-gradient(135deg,var(--accent),#7c3aed);
+      display:flex; align-items:center; justify-content:center; font-weight:900; font-size:44px; color:#021022; box-shadow: 0 6px 24px rgba(3,9,20,0.6);
+      position:relative; overflow:hidden;
+    }
+    .avatar small{position:absolute; bottom:8px; right:8px; font-size:12px; color:rgba(2,6,18,0.6)}
+    h1{margin:0; font-size:28px}
+    .role{color:var(--muted); margin-top:6px; font-weight:600}
+    .meta{display:flex; gap:8px; margin-top:12px; flex-wrap:wrap}
+    .pill{background:var(--glass); padding:8px 10px; border-radius:999px; font-size:13px; color:var(--muted);}
+    .bio{margin-top:16px; color:#d6e6f2; line-height:1.5}
+    .actions{margin-top:18px; display:flex; gap:12px}
+    .btn{padding:10px 14px; border-radius:10px; border:1px solid rgba(255,255,255,0.04); background:transparent; cursor:pointer; font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#7c3aed); color:#021022}
+    .btn-ghost{background:transparent; color:var(--accent); border:1px dashed rgba(6,182,212,0.18)}
+    .right{padding:6px 4px}
+    .skills{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .skill{background:rgba(255,255,255,0.03); padding:8px 10px; border-radius:8px; font-weight:600; font-size:13px}
+    .projects{margin-top:18px; display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:12px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.02)}
+    .project h4{margin:0 0 6px 0}
+    footer{grid-column:1/-1; margin-top:18px; display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:13px}
+    @media (max-width:720px){
+      .card{grid-template-columns: 1fr; padding:20px}
+      .avatar{width:140px;height:140px;margin:0 auto}
+      .projects{grid-template-columns:1fr}
+      footer{flex-direction:column; gap:8px; align-items:start}
+    }
+    /* subtle animations */
+    .avatar, .card{transition:transform .35s cubic-bezier(.2,.9,.2,1)}
+    .card:hover{transform:translateY(-6px)}
+    a.social{color:var(--muted); text-decoration:none}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div>
+      <div class="avatar" aria-hidden="true">K
+        <small>Ken, 22</small>
+      </div>
+      <div style="margin-top:14px; display:flex; gap:8px; justify-content:center">
+        <a class="pill" href="#contact">ติดต่อ</a>
+        <a class="pill" href="#portfolio">ผลงาน</a>
+      </div>
+    </div>
+    <div class="right">
+      <h1>เค็น — Freelance Website Developer</h1>
+      <div class="role">อายุ 22 • สร้างเว็บไซต์สวยและเร็ว • Frontend &amp; Jamstack</div>
+      <div class="meta">
+        <div class="pill">ชอบ: UI, performance, animation</div>
+        <div class="pill">ภาษา: ไทย / อังกฤษ (พอคุยงาน)</div>
+        <div class="pill">สถานะ: รับงาน freelance</div>
+      </div>
+
+      <p class="bio">สวัสดี! ผมเค็น — นักพัฒนาเว็บไซต์อายุ 22 รับออกแบบและพัฒนาเว็บสำหรับธุรกิจเล็กจนถึงสตาร์ทอัพ ใช้เทคโนโลยีสมัยใหม่เพื่อให้เว็บโหลดเร็วและปรับแต่งได้ง่าย (HTML, CSS, JavaScript, React, Next.js) ชอบทำ UI ที่ใช้งานง่ายและดูเท่</p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">จ้างเลย</a>
+        <a class="btn btn-ghost" href="#portfolio">ดูผลงาน</a>
+      </div>
+
+      <div class="skills" aria-label="Skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS / Tailwind</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Next.js</div>
+        <div class="skill">Performance</div>
+      </div>
+
+      <section id="portfolio" style="margin-top:16px">
+        <h3 style="margin:0 0 8px 0">ตัวอย่างผลงาน</h3>
+        <div class="projects">
+          <article class="project">
+            <h4>Portfolio Site</h4>
+            <p style="margin:0">One-page portfolio ที่เน้น animation และโหลดเร็ว (Lighthouse 98)</p>
+          </article>
+          <article class="project">
+            <h4>Startup Landing</h4>
+            <p style="margin:0">Landing page พร้อมระบบฟอร์มและ analytics</p>
+          </article>
+          <article class="project">
+            <h4>eCommerce Lite</h4>
+            <p style="margin:0">ร้านออนไลน์ขนาดเล็ก ปรับแต่งง่าย รองรับมือถือ</p>
+          </article>
+          <article class="project">
+            <h4>Blog / CMS</h4>
+            <p style="margin:0">บล็อกที่เชื่อมกับ headless CMS และ CDN</p>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <div>พร้อมรับงานระยะสั้น/ยาว — ราคาเริ่มต้นคุยได้</div>
+        <div style="display:flex; gap:10px; align-items:center">
+          <a class="social" href="#contact">Email</a>
+          <span style="color:var(--muted)">&middot;</span>
+          <a class="social" href="#contact">LINE</a>
+        </div>
+      </footer>
+
+      <section id="contact" style="margin-top:12px">
+        <h4 style="margin:10px 0 6px 0">ติดต่อ</h4>
+        <p style="margin:0 0 12px 0; color:var(--muted)">ส่งข้อความมาคุยรายละเอียด โปรเจค หรือขอใบเสนอราคา</p>
+        <form onsubmit="alert('ส่งข้อความ (จำลอง) — แก้เป็นลิงก์จริงได้'); return false;" style="display:flex; gap:8px; flex-wrap:wrap">
+          <input aria-label="ชื่อ" placeholder="ชื่อ" required style="flex:1; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit">
+          <input aria-label="อีเมล" placeholder="อีเมล" required style="flex:1; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit">
+          <button class="btn btn-primary" type="submit">ส่งข้อความ</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>
