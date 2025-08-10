@@ -128,24 +128,20 @@
         </div>
       </footer>
 
-      <section id="contact" style="margin-top:12px">
-        <h4 style="margin:10px 0 6px 0">ติดต่อ</h4>
-        <p style="margin:0 0 12px 0; color:var(--muted)">ส่งข้อความมาคุยรายละเอียด โปรเจค หรือขอใบเสนอราคา</p>
-        <form id="contactForm" style="display:flex; gap:8px; flex-wrap:wrap">
-  <input name="from_name" aria-label="ชื่อ" placeholder="ชื่อ" required
-    style="flex:1; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit">
-  <input name="reply_to" type="email" aria-label="อีเมล" placeholder="อีเมล" required
-    style="flex:1; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit">
-  <textarea name="message" aria-label="ข้อความ" placeholder="ข้อความ" required
-    style="flex-basis: 100%; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit; min-height:80px;"></textarea>
-  <button class="btn btn-primary" type="submit">ส่งข้อความ</button>
-</form>
-        <form onsubmit="alert('ส่งข้อความ (จำลอง) — แก้เป็นลิงก์จริงได้'); return false;" style="display:flex; gap:8px; flex-wrap:wrap">
-          <input aria-label="ชื่อ" placeholder="ชื่อ" required style="flex:1; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit">
-          <input aria-label="อีเมล" placeholder="อีเมล" required style="flex:1; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit">
-          <button class="btn btn-primary" type="submit">ส่งข้อความ</button>
-        </form>
-      </section>
+     <section id="contact" style="margin-top:12px">
+  <h4 style="margin:10px 0 6px 0">ติดต่อ</h4>
+  <p style="margin:0 0 12px 0; color:var(--muted)">ส่งข้อความมาคุยรายละเอียด โปรเจค หรือขอใบเสนอราคา</p>
+  <form id="contactForm" style="display:flex; gap:8px; flex-wrap:wrap">
+    <input name="from_name" aria-label="ชื่อ" placeholder="ชื่อ" required
+      style="flex:1; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit">
+    <input name="reply_to" type="email" aria-label="อีเมล" placeholder="อีเมล" required
+      style="flex:1; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit">
+    <textarea name="message" aria-label="ข้อความ" placeholder="ข้อความ" required
+      style="flex-basis: 100%; padding:10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:inherit; min-height:80px;"></textarea>
+    <button class="btn btn-primary" type="submit" style="flex-basis: 100%; max-width: 140px;">ส่งข้อความ</button>
+  </form>
+</section>
+
 
     </div>
   </main>
@@ -168,3 +164,4 @@
 </script>
 </body>
 </html>
+
