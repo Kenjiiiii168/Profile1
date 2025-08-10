@@ -143,9 +143,9 @@
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     // เปลี่ยนค่า Public Key นี้เป็นของคุณจาก dashboard.emailjs.com
-    emailjs.init("w76_KOb4iLibFhRV7");
+    emailjs.init(w76_KOb4iLibFhRV7);
 
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
+    document.getElementById(contactForm).addEventListener(submit, function(e) {
       e.preventDefault();
 
       emailjs.sendForm("service_2k74qyr", "template_1u60vgn", this)
@@ -160,5 +160,6 @@
   </script>
 </body>
 </html>
+
 
 
