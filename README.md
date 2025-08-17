@@ -1,5 +1,5 @@
 https://kenjiiiii168.github.io/Profile/
-# 👋 สวัสดีครับ ผมเคน (Ken)
+# 👋 สวัสดีครับ ผมเค็น (Ken)
 
 ## 👨‍💻 Freelance Website Developer | Frontend & Jamstack
 
