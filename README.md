@@ -1,1 +1,1 @@
-https://kenjiiiii168.github.io/Profile1/
+https://kenjiiiii168.github.io/Profile/
