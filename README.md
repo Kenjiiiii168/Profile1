@@ -37,7 +37,7 @@ https://kenjiiiii168.github.io/Profile/
 4.  **Blog / CMS**
     -   บล็อกที่เชื่อมต่อกับ headless CMS และ CDN
 
-**[ดูผลงานทั้งหมด](ลิงก์ไปยังหน้าผลงานของคุณ)**
+**[ดูผลงานทั้งหมด](https://github.com/Kenjiiiii168)**
 
 ---
 
